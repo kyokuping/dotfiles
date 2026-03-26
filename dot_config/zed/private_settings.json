@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "session": {
-    "trust_all_worktrees": true,
+    "trust_all_worktrees": true
   },
   "vim_mode": true,
   "icon_theme": "Zed (Default)",
@@ -17,28 +17,31 @@
   "theme": {
     "mode": "light",
     "light": "One Light",
-    "dark": "One Dark",
+    "dark": "One Dark"
   },
   "load_direnv": "direct",
   "languages": {
     "Nix": {
       "language_servers": ["nil"],
-      "format_on_save": "on",
-    },
+      "format_on_save": "on"
+    }
+  },
+  "file_types": {
+    "Shell Script": [".envrc", ".envrc.*"]
   },
   "lsp": {
     "nil": {
       "binary": {
-        "path": "nil",
+        "path": "nil"
       },
       "initialization_options": {
         "formatting": {
-          "command": ["nixpkgs-fmt"],
+          "command": ["nixpkgs-fmt"]
         },
         "diagnostic": {
-          "ignored": ["unused_binding"],
-        },
-      },
-    },
-  },
+          "ignored": ["unused_binding"]
+        }
+      }
+    }
+  }
 }
