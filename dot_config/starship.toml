@@ -1,0 +1,31 @@
+add_newline = true
+format = """
+[┌──](bold bright-green) $username$hostname$localip$shlvl$singularity$kubernetes$directory$vcsh$git_branch$git_commit$git_state$git_metrics$git_status$hg_branch$docker_context$package$buf$cmake$cobol$container$dart$deno$dotnet$elixir$elm$erlang$golang$haskell$helm$java$julia$kotlin$lua$nim$nodejs$ocaml$perl$php$pulumi$purescript$python$rlang$red$ruby$rust$scala$swift$terraform$vlang$vagrant$zig$nix_shell$conda$memory_usage$aws$gcloud$openstack$azure$env_var$crystal$custom$sudo$cmd_duration$jobs$battery$time$status$shell
+[│](bold bright-green)
+[└─>](bold bright-green) """
+
+[[battery.display]]
+threshold = 50
+
+[time]
+disabled = false
+use_12hr = true
+
+[git_status]
+format = '([\[$ahead_behind\] ]($style))'
+style = "bold #666666"
+ahead = "[⇡${count}](green)"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "[⇣${count}](red)"
+
+[aws]
+symbol=" "
+[aws.region_aliases]
+ap-northeast-2 = "Seoul"
+
+[gcloud]
+symbol = " "
+
+[dart]
+symbol = " "
+style = "bold cyan"
