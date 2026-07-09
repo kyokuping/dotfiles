@@ -1,0 +1,28 @@
+[theme]
+name = "catppuccin-latte"
+auto_switch = false
+dark_name = "catppuccin"
+light_name = "catppuccin-latte"
+
+[terminal]
+default_shell = "/bin/zsh"
+
+[update]
+version_check = false
+
+[ui]
+agent_panel_sort = "priority"
+
+[ui.toast]
+delivery = "herdr"
+
+[ui.sound]
+path = "sounds/notification.mp3"   # one mp3 file for all sound notifications
+done_path = "sounds/done.mp3"      # overrides only finished notifications
+request_path = "sounds/request.mp3" # overrides only needs-attention notifications
+
+[remote]
+manage_ssh_config = false
+
+[experimental]
+switch_ascii_input_source_in_prefix = true
