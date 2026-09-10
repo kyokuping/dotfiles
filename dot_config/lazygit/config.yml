@@ -1,0 +1,7 @@
+git:
+  log:
+    showGraph: always
+    order: topo-order
+gui:
+  nerdFontsVersion: "3"
+  showFileTree: true
